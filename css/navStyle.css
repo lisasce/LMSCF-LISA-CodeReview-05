@@ -15,23 +15,25 @@ body {
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    color: whitesmoke;
+    font-size: 40px !important;
+    font-weight: bolder !important;
     text-align: center;
     position: relative;
     width: 100%;
     top: 0px;
-    background: black;
     margin: 0px;
     margin-bottom: 0 !important;
     padding: 15px 0px;
     z-index: 200;
+    background-image: url(https://2.bp.blogspot.com/-pKFE-5ysj68/TkjG9DvLB4I/AAAAAAAAEoM/rDKiHkvbC8o/s1600/Abstract_Wallpaper_8.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 h3{
-    color: whitesmoke;
     padding: 2px 30px;
     background-color: rgb(69,69,69);
-
+    color: whitesmoke;
 }
 
 #instructions {
@@ -95,7 +97,7 @@ li:hover {
 #menu {
     display: block;
     position: fixed;
-    background: rgb(69,69,69);
+    background: black;
     color: whitesmoke;
     height: 100%;
     width: 320px;
@@ -127,8 +129,10 @@ li:hover {
     transform: translateX(300px) rotateY(15deg);
 }
 
-a{
-    color: whitesmoke !important;
+span:last-of-type, a{
     text-decoration: none !important;
     font-size: 2rem;
+    background-image: url(https://2.bp.blogspot.com/-pKFE-5ysj68/TkjG9DvLB4I/AAAAAAAAEoM/rDKiHkvbC8o/s1600/Abstract_Wallpaper_8.jpg) !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
 }
