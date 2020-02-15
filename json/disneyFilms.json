@@ -1,0 +1,82 @@
+disney = `[
+        {
+        "id":0,
+        "img": "aladdin.jpg",
+        "title": "Aladdin",
+        "description": "Magic carpets, mysteriously blue genies, sarcastic parrots, and sinister dudes named Jafar hellbent on ruling Agrabah — what more could you possibly want from a Disney movie? Oh and the music will be stuck in your head all day too.",
+        "likes": 10
+        },
+		
+		{
+        "id":1,
+        "img": "bambi.jpg",
+        "title": "Bambi",
+        "description": "Sure, Bambi is impossible to watch without weeping hysterically, but once you're over the trauma of Bambi's mom dying, the rest of the film is full of cheerful bunnies and shy skunks who just want to be BFFs (best forrest friends) with everyone.",
+        "likes": 9
+        },
+
+        {
+        "id":2,
+        "img": "beauty.jpg",
+        "title": "The Beauty and the beast",
+        "description": "If movies about humans falling in love with beasts are your thing, look no further than Beauty and the Beast. Sure, the plot is strange if you think about it too much, but it's also lovely and romantic. Plus, before the days of Moana and Frozen, Belle was one of Disney's most progressive female protagonists",
+        "likes": 8
+		},
+
+		{
+        "id":3,
+        "img": "lilo.jpg",
+        "title": "Lilo & Stitch",
+        "description": "Otherwise known as the movie responsible for everyone (just us?) coming this close to getting a 'Ohana means family' tattoo. Some Disney diehards might claim only the classics can top a 'best of' list, but Lilo & Stich is glorious.",
+        "likes": 7
+        },
+
+       	{
+        "id":4,
+		"img": "lion.jpg",
+        "title": "The Lion King",
+        "description": "The Lion King might just be the best Disney movie of all time. Not only is it based on Hamlet (who knew?!), but it's full of beautiful original songs like 'Hakuna Matata' and 'Can You Feel the Love Tonight?'",
+        "likes": 6
+        },
+
+       	{
+        "id":5,
+		"img": "mermaid.jpg",
+        "title": "The Little Mermaid",
+        "description": "The Little Mermaid is a film about a fierce independent woman (make that mermaid) who's sick of her dad telling her what to do, ditches the mer-patriarchy, battles a giant octopus, and lives life on her own terms. Good job, Disney.",
+        "likes": 5
+        },
+
+       	{
+        "id":6,
+		"img": "moana.jpg",
+        "title": "Moana",
+        "description": "Every now and then Disney releases an iffy movie and you find yourself wondering if they've lost their magical touch. And then they come out with a movie like Moana and you find yourself weeping in a theater surrounded by children. It's one of their greatest yet.",
+        "likes": 4
+        },
+
+       	{
+        "id":7,
+		"img": "mulan.jpg",
+        "title": "Mulan",
+        "description": "Speaking of empowered Disney women, no one is more badass than Mulan — a young woman who was judged for her gender and then ended up saving an entire city from invasion with the help of a cute talking dragon.",
+        "likes": 3
+        },
+
+       	{
+        "id":8,
+		"img": "pocahontas.jpg",
+        "title": "Pocahontas",
+        "description": "The music alone makes Pocahontas one of Disney's best animated films. 'Paint with All the Colors of the Wind' in particular is beautiful and thought-provoking and lord knows no '90s kid can come across a river without breaking into a rendition of 'Just Around the River Bend.'",
+        "likes": 2
+        },
+
+       	{
+        "id":9,
+		"img": "robin.jpg",
+        "title": "Robin Hood",
+        "description": "Did you have a weird pseudo-crush on the animated fox in Robin Hood? You are not alone, friend! At this point it's a fully established internet joke that Robin Hood was the most dashing outlaw in Sherwood Forest, and he sang some pretty great songs when he wasn't busy breaking hearts and robbing banks.",
+        "likes": 1
+        }
+
+        ]`;

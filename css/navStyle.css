@@ -1,0 +1,133 @@
+html {
+    background: black;
+}
+
+#content {
+    background: black;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF1F1F1F', endColorstr='#FF000000');
+    background-image: radial-gradient(center, ellipse cover, #1f1f1f 0%, #2c3e50 100%);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    background: black;
+    margin: 0px;
+    margin-bottom: 0 !important;
+    padding: 15px 0px;
+    z-index: 200;
+}
+h3{
+    color: whitesmoke;
+    padding: 2px 30px;
+    background-color: rgb(69,69,69);
+
+}
+
+#instructions {
+    width: 728px;
+    height: auto;
+    border: 1px solid #8E8E8E;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+#instructions p {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 20px;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.set3d {
+    margin: 0;
+    perspective: 800px;
+    perspective-origin: 0% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#trigger {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    display: block;
+    right: -50px;
+    background: transparent;
+    top: 0;
+}
+
+#menu {
+    display: block;
+    position: fixed;
+    background: rgb(69,69,69);
+    color: whitesmoke;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    left: 0px;
+    z-index: 2;
+    margin: 0px;
+    padding: 20px;
+    transform: rotateY(-30deg) translateX(-100%);
+    box-sizing: border-box;
+    transition: transform .4s ease;
+    transform-origin: 0% 50%;
+}
+
+#menu:hover {
+    transform: rotateY(0deg);
+}
+
+#content {
+    box-sizing: border-box;
+    transition: transform .4s ease;
+    transform-origin: 0% 50%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.active #content {
+    transform: translateX(300px) rotateY(15deg);
+}
+
+a{
+    color: whitesmoke !important;
+    text-decoration: none !important;
+    font-size: 2rem;
+}
