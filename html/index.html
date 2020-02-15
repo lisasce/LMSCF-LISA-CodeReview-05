@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="author" content="Lisa">
     <meta name="description" content="The 20 Best Disney Movies of All Time, have a look and drop your vote!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +23,14 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--
+tinySort library
+-->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.5/tinysort.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.5/jquery.tinysort.js"></script>
 </head>
 <body class="set3d">
 <div id="menu">
@@ -45,7 +48,15 @@
 <div id="content">
     <h1>Movie Factory</h1>
     <h3 class="mb-0"><a  href="index.html"target="_blank">Home</a></h3>
-    <h3 class="text-center p-2"><button type="button" class="btn btn-primary float-left p-1">⏪ Menu</button>Movies<button type="button" class="btn btn-primary float-right p-1">🔽 Sort</button></h3>
+    <h3 class="text-center p-2">
+        <span id="popup" class="alert alert-warning">Hover the page's left side!</span>
+        <button id="menuBtn" type="button" class="btn btn-primary float-left p-1">⏪ Menu
+        </button>
+            Movies
+        <button id="sortBtn" type="button" class="btn btn-primary float-right p-1">
+            🔽 Sort
+        </button>
+    </h3>
 
 
 
