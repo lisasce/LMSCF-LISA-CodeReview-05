@@ -1,5 +1,6 @@
-html {
-    background: black;
+body {
+    background-color: #bbff99 !important;
+    background-image: linear-gradient(319deg, #bbff99 0%, #ffec99 37%, #ff9999 100%) !important;
 }
 
 #content {
