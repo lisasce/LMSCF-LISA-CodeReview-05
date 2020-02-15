@@ -38,7 +38,6 @@ document.getElementById("cardDiv").innerHTML += img;
 $(document).ready(function(){
 
 domElementstoSort = $(".singleCard");
-console.table(domElementstoSort);
 
 iArray.forEach((i)=>{setEvent(i)});
 // i ist das element von iArray, in dem Fall die indices die in der For Schleife gepushed wurden
@@ -80,15 +79,14 @@ function countingLikes (btn, i) {
         btn.innerText = dislikes[i];
     }
     likesAverage[i] = likes[i] - dislikes[i];
-    console.table(likesAverage);
     $("#"+divID).attr("value", likesAverage[i]);
 }
 
 
 function sortRating() {
-    domElementstoSort.sort(function (element1, element2) {
-    
-    })
+    console.log(domElementstoSort);
+    tinysort(domElementstoSort, {order:"desc", attr:"value"});
+    console.log(domElementstoSort);
 
 }
 
