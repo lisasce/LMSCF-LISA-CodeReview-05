@@ -17,7 +17,7 @@ for (let i=0; i < disneyInfo.length ; i++){
     likesAverage.push(disneyInfo[i].likes);
 
     var img = `
-        <div id="${disneyInfo[i].id}" value="${disneyInfo[i].likes}" class="singleCard no-gutters media  col-lg-5 mt-2 mb-2 p-2">
+        <div id="${disneyInfo[i].id}" value="${disneyInfo[i].likes}" class="wow jackInTheBox singleCard no-gutters media  col-lg-5 mt-2 mb-3 p-2" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="../img/${disneyInfo[i].img}" class= "disneyPic col-lg-5 col-4 m-2 p-2" alt="${disneyInfo[i].img}" title="${disneyInfo[i].title}">
                 <div class=" media-body col-lg-7 p-3">
                     <h4 class="card-title">${disneyInfo[i].title}</h4>
