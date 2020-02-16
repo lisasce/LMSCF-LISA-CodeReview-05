@@ -32,8 +32,7 @@ h1 {
 
 h3{
     padding: 2px 30px;
-    background-color: rgb(69,69,69);
-    color: whitesmoke;
+    background-color: black;
 }
 
 #instructions {
@@ -72,7 +71,7 @@ li {
 }
 
 li:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: deeppink /*rgba(255, 255, 255, 0.4)*/;
     cursor: pointer;
 }
 
@@ -85,6 +84,7 @@ li:hover {
 }
 
 #trigger {
+    /*das ist die durchsichtige bar die nur den Effekt aktivieren soll, kein platz einnehmen soll*/
     position: absolute;
     width: 50px;
     height: 100%;
@@ -104,16 +104,22 @@ li:hover {
     top: 0;
     left: 0px;
     z-index: 2;
+    /*damit es ein bisschen höher ist als der content*/
     margin: 0px;
     padding: 20px;
     transform: rotateY(-30deg) translateX(-100%);
+    /*damit man das menü außerhalb der seite schiebt und somit nicht sieht rotate minus = anticlockwise, translate minus = nach links raus*/
     box-sizing: border-box;
     transition: transform .4s ease;
+    /*speed*/
     transform-origin: 0% 50%;
+    /*change the position of transformed element*/
 }
 
 #menu:hover {
     transform: rotateY(0deg);
+    /*rotate retour*/
+
 }
 
 #content {
@@ -123,10 +129,12 @@ li:hover {
     width: 100%;
     height: 100%;
     overflow-y: auto;
+    /*wenn der content mehr platz braucht als was vorgesehen ist, damit nichts zu sehen ist wenns es drübergeht*/
 }
 
 .active #content {
     transform: translateX(300px) rotateY(15deg);
+    /*shiebe nach rechts wegen menü und dreht nach hinten*/
 }
 
 span:last-of-type, a{
