@@ -51,7 +51,8 @@ iArray.forEach((i)=>{setEvent(i)});
 
 document.getElementById("sortBtn").addEventListener("click", sortRating);
 
-let popup = $("#popup");
+
+    let popup = $("#popup");
 // wir deklarieren die variable  damit wir nicht mit der id arbeiten müssen
 popup.hide();
 document.getElementById("menuBtn").addEventListener("click", function () {
@@ -78,9 +79,11 @@ function setEvent(i) {
 
 // bekommt den i wie oben von iArray
 function countingLikes (btn, i) {
-    var divID = disneyInfo[i].id
+    var divID = disneyInfo[i].id;
     if (btn.id === "likeBtn"+ divID){
        likes[i] += 1;
+       // disneyInfo[i].likes++; changes temporarly the json info in the browser
+       // console.table(disneyInfo);
        btn.innerText = likes[i];
     }
     else if (btn.id === "dislikeBtn"+divID) {
@@ -97,6 +100,7 @@ function sortRating() {
     console.log(domElementstoSort);
     tinysort(domElementstoSort, {order:"desc", attr:"value"});
     console.log(domElementstoSort);
+    // disneyInfo.sort(function(a,b){ return b.likes - a.likes })
 }
 // tinySort war teil vom JS ist aber jz eine library, man viele möglichkeiten zum sortieren , hier sortiert man absteigend durch die oben gesetzte value - die div wurden in dem array domElementstoSort als ganze objekte gespeichert sonst könnte man nicht auf dem attribut value zurückgreifen. die divs gehen kurz raus aus dem dom, organisieren sich neu und kommen wieder rein, deswegen kommt die animation wieder
 
